@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test URL Encoding</title>
+</head>
+<body>
+  <script>
+    const scenarios = ['对峙', '婚外情'];
+    const params = new URLSearchParams();
+    params.append('scenarios', scenarios.join(','));
+    console.log('URL:', params.toString());
+    document.getElementById('result').textContent = params.toString();
+  </script>
+  <p id="result"></p>
+</body>
+</html>
