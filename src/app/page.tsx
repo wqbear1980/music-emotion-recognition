@@ -8154,7 +8154,6 @@ end lookupMood
                     step="0.1"
                     value={currentTime}
                     onChange={handleSeek}
-                    onInput={handleSeek}
                     onPointerDown={() => setIsSeeking(true)}
                     onPointerUp={() => setIsSeeking(false)}
                     onPointerLeave={() => setIsSeeking(false)}
@@ -10507,8 +10506,6 @@ end lookupMood
                           step="0.1"
                           value={currentTime}
                           onChange={handleSeek}
-                          onInput={handleSeek}
-                          onPointerDown={() => setIsSeeking(true)}
                           onPointerUp={() => setIsSeeking(false)}
                           onPointerLeave={() => setIsSeeking(false)}
                           className="w-full h-1.5 bg-white/20 rounded-full appearance-none cursor-pointer"
