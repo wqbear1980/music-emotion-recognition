@@ -40,7 +40,7 @@ jobs:
         NEXT_PUBLIC_BUILD_TARGET: electron
     
     - name: Compile Electron main process
-     run: npx tsc -p electron/tsconfig.json
+      run: npx tsc -p electron/tsconfig.json
     
     - name: Build Electron app for macOS
       run: npx electron-builder --mac
