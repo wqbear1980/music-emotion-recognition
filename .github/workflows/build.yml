@@ -43,7 +43,7 @@ jobs:
       run: npx tsc -p electron/tsconfig.json
     
     - name: Build Electron app for macOS
-      run: npx electron-builder --mac
+      run: npx electron-builder --mac --publish=never
     
     - name: List build artifacts
       run: ls -lh dist/
